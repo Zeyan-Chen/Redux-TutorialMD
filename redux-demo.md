@@ -74,7 +74,7 @@ const App: React.FC = () => {
 ## step3 action creator
 
 ```javascript
-./src/store/actions.tsx
+./src/store/actions.ts
 
 export const handleOnChange = (e) => ({
     type: 'HANDLEONCHANGE',
@@ -85,7 +85,7 @@ export const handleOnChange = (e) => ({
 and
 
 ```javascript
-./src/store/reducer.tsx
+./src/store/reducer.ts
 
 export const todolist_reducer = (state = todolost_state, action) => {
     switch (action.type) {
