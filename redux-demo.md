@@ -13,6 +13,8 @@ src
 ## step1 design state reducer
 
 ```javascript
+./src/store/reducer.ts
+
 // state
 const todolost_state = {
     text: '',
@@ -31,6 +33,8 @@ export const todolist_reducer = (state = todolost_state, action) => {
 ## step2 connect to your module
 
 ```javascript
+./src/store/index.ts
+
 import { createStore } from 'redux';
 import { todolist_reducer } from './reducer';
 
@@ -40,6 +44,8 @@ export default createStore(todolist_reducer);
 and
 
 ```javascript
+./src/index.tsx
+
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -54,6 +60,8 @@ render(
 ## step2 state render to your module
 
 ```javascript
+./src/components/App.tsx
+
 import { useSelector } from "react-redux";
 
 const App: React.FC = () => {
@@ -66,7 +74,7 @@ const App: React.FC = () => {
 ## step3 action creator
 
 ```javascript
-src / store / actions.ts;
+./src/store/actions.tsx
 
 export const handleOnChange = (e) => ({
     type: 'HANDLEONCHANGE',
@@ -77,7 +85,7 @@ export const handleOnChange = (e) => ({
 and
 
 ```javascript
-src / store / reducer.ts;
+./src/store/reducer.tsx
 
 export const todolist_reducer = (state = todolost_state, action) => {
     switch (action.type) {
@@ -92,7 +100,7 @@ export const todolist_reducer = (state = todolost_state, action) => {
 and
 
 ```javascript
-src / components / App.tsx;
+./src/components/App.tsx
 
 import { useDispatch } from 'react-redux';
 import { handleOnChange } from '../store/actions';
