@@ -1,4 +1,4 @@
-# Redux step by step
+# 連雉雞都會的 Redux 教學
 
 create file
 
