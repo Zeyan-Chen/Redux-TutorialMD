@@ -61,7 +61,7 @@ render(
 );
 ```
 
-## step2 state render to your module
+## step3 state render to your module
 
 ```javascript
 ./src/components/App.tsx
@@ -75,7 +75,7 @@ const App: React.FC = () => {
 
 ```
 
-## step3 action creator
+## step4 action creator
 
 ```javascript
 ./src/store/actions.ts
